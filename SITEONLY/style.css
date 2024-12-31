@@ -1,0 +1,39 @@
+h1 {
+    color: rgb(0, 0, 0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+img {
+    display: block;
+    margin: auto;
+    width: 200px;
+    border-radius: 35px;
+
+}
+
+.Header {
+    font-weight: bold;
+    font-size: large;
+    display: flex;
+    justify-content: left;
+
+}
+
+.Title {
+    font-weight: bold;
+    font-size: large;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+body {
+    background-color: rgb(245, 207, 112);
+}
+
+.subhead {
+    font-weight: bold;
+}
