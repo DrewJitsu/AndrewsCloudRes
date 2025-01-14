@@ -24,4 +24,4 @@ jobs:
         aws-region: us-east-1
 
     - name: Sync files to S3
-      run: aws s3 sync . s3://andrewscloudres.com --delete
+      run: aws s3 sync ./SITEONLY s3://andrewscloudres.com --delete
