@@ -16,10 +16,8 @@ jobs:
     - name: Configure AWS credentials
       uses: aws-actions/configure-aws-credentials@v3
       with:
-       aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
-       aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
-       aws-region: us-east-1
-
+        role-to-assume: arn:aws:iam::522814736381:role/GitActions
+        aws-region: us-east-1
 
     - name: Sync files to S3
-      run: aws s3 sync ./ResumeSite arn:aws:s3:::andrewscloudres.com --delete
+      run: aws s3 sync ./ResumeSite s3://AndrewsCloudRes --delete
