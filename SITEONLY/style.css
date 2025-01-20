@@ -36,4 +36,9 @@ body {
 
 .subhead {
     font-weight: bold;
+    justify-content: center;
+}
+
+p {
+    justify-content: center;
 }
